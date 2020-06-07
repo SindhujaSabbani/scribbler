@@ -4,8 +4,8 @@
         <p class="logo-text">Explore, Imagine, Create</p>
     </div>
     <div class="header-buttons">
-        <input class="button header-button" type="button" value="Sign In">
-        <input class="button header-button" type="button" value="Sign Up" onclick="signupClick()" >
+        <input class="button header-button" type="button" value="Sign In" onclick="signinClick()">
+        <input class="button header-button" type="button" value="Sign Up" onclick="signupClick()">
     </div>
 </div>
 
@@ -14,8 +14,9 @@
 <div class="modal" id="modal-signup" tabindex="-1">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title">Get Started</h5>
-            <i class="fa fa-times btn-modal-close" id="btn-close-signup" onclick="closeSignupClick()" aria-hidden="true"></i>
+            <div class="modal-title">Get Started</div>
+            <i class="fa fa-times btn-modal-close" id="btn-close-signup" onclick="closeSignupClick()"
+               aria-hidden="true"></i>
         </div>
         <div class="modal-body">
             <form class="form">
@@ -43,5 +44,36 @@
             </form>
         </div>
 
+    </div>
+</div>
+
+
+<div class="modal" id="modal-signin" tabindex="-1">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title">Welcome Back!</div>
+            <i class="fa fa-times btn-modal-close" id="btn-close-signin" onclick="closeSigninClick()"
+               aria-hidden="true"></i>
+        </div>
+        <div class="modal-body">
+            <form class="form">
+                <div class="form-group">
+                    <label for="userName">Username</label>
+                    <input type="text" class="modal-form-control" id="userNameSignin" required
+                           placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="modal-form-control" id="passwordSignin" required
+                           placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn-modal">Sign In</button>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <div class="footer-title">Not a member?</div>
+            <a class="footer-link" onclick="javascript:signupLinkClick()">Sign Up</a>
+        </div>
     </div>
 </div>

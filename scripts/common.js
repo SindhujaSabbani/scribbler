@@ -31,25 +31,41 @@ function includeHTML() {
 }
 
 
-// Get the <span> element that closes the modal
-var btnCloseSignup = document.getElementById("btn-close-signup");
-
 // When the user clicks on the button, open the modal
 function signupClick() {
-    modalSignup = document.getElementById("modal-signup");
+    var modalSignup = document.getElementById("modal-signup");
     modalSignup.style.display = "block";
-
 }
 
 // When the user clicks on <span> (x), close the modal
 function closeSignupClick() {
-    modalSignup = document.getElementById("modal-signup");
+    var modalSignup = document.getElementById("modal-signup");
     modalSignup.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
+// When the user clicks on the button, open the modal
+function signinClick() {
+    var modalSignin = document.getElementById("modal-signin");
+    modalSignin.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+function closeSigninClick() {
+    var modalSignin = document.getElementById("modal-signin");
+    modalSignin.style.display = "none";
+}
+
+function signupLinkClick() {
+    closeSigninClick();
+    signupClick();
+}
 window.onclick = function (event) {
+    var modalSignup = document.getElementById("modal-signup");
+    var modalSignin = document.getElementById("modal-signin");
     if (event.target == modalSignup) {
         modalSignup.style.display = "none";
+    } else if (event.target == modalSignin) {
+        modalSignin.style.display = "none";
     }
 }
