@@ -1,0 +1,102 @@
+.postlist-body {
+    background-color: #ffeedd;
+}
+
+.postlist-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    max-width: 40%;
+    margin: 20px;
+}
+.post:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.post-username {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.post-body {
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.post-row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.post-title {
+    color: gray;
+    float: left;
+    width: 95%;
+    max-width: 100em;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 1em;
+    margin: 10px 10px 10px 0px;
+}
+
+.post-icon {
+    float: right;
+}
+
+.post-icon:hover {
+    cursor: pointer;
+}
+
+.post-content {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 3.5em;
+}
+
+.btn-yes {
+    width: fit-content;
+    background-color: #28a745;
+    padding: 5px 30px 5px 30px;
+
+}
+
+.btn-no {
+    width: fit-content;
+    background-color: red;
+    padding: 5px 30px 5px 30px;
+}
+
+.modal-delete-body {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.modal-delete-header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}
