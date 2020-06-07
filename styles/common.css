@@ -10,7 +10,6 @@
 
 .header-buttons {
     float: right;
-    align-items: baseline;
 }
 
 .logo-title {
@@ -25,13 +24,15 @@
     margin: 0px;
 }
 
-.header-button {
-    float: right;
+.button {
     margin: 0px 10px 10px 10px;
     padding: 10px 20px 10px 20px;
-    background-color: blue;
     border-style: outset;
     border-color: white;
+}
+
+.header-button {
+    background-color: blue;
     color: white;
 }
 
