@@ -31,3 +31,30 @@ body {
     background-color: #cfb53c;
     color: black;
 }
+
+.modal-form-control-textarea {
+    resize: none;
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: darkgray;
+    background-color: #f1f1f1;
+    border: 0px;
+    margin-top: 5px;
+}
+
+.btn-post {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+}
+
+.modal-post-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 90%;
+    padding: 20px;
+}

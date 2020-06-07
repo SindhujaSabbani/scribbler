@@ -63,9 +63,10 @@ function signupLinkClick() {
 window.onclick = function (event) {
     var modalSignup = document.getElementById("modal-signup");
     var modalSignin = document.getElementById("modal-signin");
+
     if (event.target == modalSignup) {
-        modalSignup.style.display = "none";
+        closeSignupClick();
     } else if (event.target == modalSignin) {
-        modalSignin.style.display = "none";
+        closeSigninClick();
     }
 }
