@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    width: 100vw;
+}
+
+.header-logo {
+    float: left;
+    width: 20%;
+}
+
+.header-buttons {
+    float: right;
+    align-items: baseline;
+}
+
+.logo-title {
+    font-family: 'Montez', cursive;
+    font-size: 2.5em;
+    color: blue;
+}
+
+.logo-text {
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+    margin: 0px;
+}
+
+.header-button {
+    float: right;
+    margin: 0px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: blue;
+    border-style: outset;
+    border-color: white;
+    color: white;
+}
+
+
+
+
+
+
