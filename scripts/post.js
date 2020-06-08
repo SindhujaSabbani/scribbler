@@ -1,8 +1,8 @@
 function editButtonClick() {
     var postTitle = document.getElementById('post-title');
     var postText = document.getElementById('post-text');
-    var textEdit = document.getElementById('text-edit');
-    var textSave = document.getElementById('text-save');
+    var btnText = document.getElementById('btn-text');
+
 
     if (postTitle.contentEditable != "true") {
         postTitle.contentEditable = "true";
@@ -11,8 +11,7 @@ function editButtonClick() {
         postTitle.classList.add("border-crimson");
         postText.classList.add("border-crimson");
 
-        textEdit.classList.add("hidden");
-        textSave.classList.remove("hidden");
+        btnText.innerHTML = 'Save <i class="fa fa-floppy-o" id="btn-icon"></i>';
     } else {
         postTitle.contentEditable = "false";
         postText.contentEditable = "false";
@@ -20,8 +19,7 @@ function editButtonClick() {
         postTitle.classList.remove("border-crimson");
         postText.classList.remove("border-crimson");
 
-        textEdit.classList.remove("hidden");
-        textSave.classList.add("hidden");
+        btnText.innerHTML = 'Edit <i class="fa fa-pencil-square-o" id="btn-icon"></i>';
     }
 }
 
