@@ -1,11 +1,11 @@
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the create-post button, open the modal
 function postClick() {
     var modalPost = document.getElementById("modal-post");
     modalPost.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Close the create post modal
 function closePostClick() {
     var modalPost = document.getElementById("modal-post");
     modalPost.style.display = "none";

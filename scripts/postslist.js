@@ -1,5 +1,7 @@
+// holder for deleted post
 var postToDelete;
 
+// When post trash icon is clicked
 function trashClick(e) {
     postToDelete = e.parentNode.parentNode.parentNode;
     //alert(postToDelete);
@@ -7,13 +9,7 @@ function trashClick(e) {
     modalPostDelete.style.display = "block";
 }
 
-
-function noClick() {
-    var modalPostDelete = document.getElementById("modal-post-delete");
-    modalPostDelete.style.display = "none";
-    postToDelete = null;
-}
-
+// When Yes button of delete-post modal is clicked
 function yesClick() {
     postToDelete.remove();
     postToDelete = null;
@@ -21,6 +17,9 @@ function yesClick() {
     modalPostDelete.style.display = "none";
 }
 
-function ellipsisClick() {
-
+// When No button of delete-post modal is clicked
+function noClick() {
+    var modalPostDelete = document.getElementById("modal-post-delete");
+    modalPostDelete.style.display = "none";
+    postToDelete = null;
 }

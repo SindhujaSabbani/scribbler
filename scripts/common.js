@@ -1,3 +1,4 @@
+//Function to display header
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -31,35 +32,38 @@ function includeHTML() {
 }
 
 
-// When the user clicks on the button, open the modal
+// When the user clicks signup button, open signup modal
 function signupClick() {
     var modalSignup = document.getElementById("modal-signup");
     modalSignup.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Close signup modal
 function closeSignupClick() {
     var modalSignup = document.getElementById("modal-signup");
     modalSignup.style.display = "none";
 }
 
 
-// When the user clicks on the button, open the modal
+// When the user clicks signin button, open signin modal
 function signinClick() {
     var modalSignin = document.getElementById("modal-signin");
     modalSignin.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Close signin modal
 function closeSigninClick() {
     var modalSignin = document.getElementById("modal-signin");
     modalSignin.style.display = "none";
 }
 
+// When the user clicks signup link
 function signupLinkClick() {
     closeSigninClick();
     signupClick();
 }
+
+// When the user clicks outside the modal.
 window.onclick = function (event) {
     var modalSignup = document.getElementById("modal-signup");
     var modalSignin = document.getElementById("modal-signin");

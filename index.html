@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <link rel="stylesheet" href="./styles/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -12,21 +11,21 @@
 
     <script src="scripts/common.js"></script>
     <script src="scripts/index.js"></script>
-
-
 </head>
 
 <body class="flex-container">
+
+<!-- Header div -->
 <div w3-include-html="html/header.html"></div>
 
-<!-- TODO: Include all your code for the header and home page here -->
-
+<!-- Buttons -->
 <div class="home-body">
     <input class="button home-button" type="button" value="All Posts"
            onclick="location.href='html/postslist.html';">
     <input class="button home-button" type="button" value="Create Post" onclick="postClick()">
 </div>
 
+<!-- Create Post modal-->
 <div class="modal" id="modal-post" tabindex="-1">
     <div class="modal-post-content">
         <div class="modal-header">
@@ -54,9 +53,10 @@
 
     </div>
 </div>
+
+<!-- Script to include header -->
 <script type="text/javascript">
     includeHTML();
 </script>
 </body>
-
 </html>
