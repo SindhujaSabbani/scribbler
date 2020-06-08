@@ -33,13 +33,12 @@
     </div>
     <button type="button" class="btn" onclick="postLiked()"><i class="fa fa-thumbs-up" id="btn-like-text"> Like</i></button>
     <div class="btn-like-tip" id="like-tip">Be the first one to like this!</div>
-    <textarea class="edt-comment" rows="4" placeholder="Leave a comment..." ></textarea>
-    <button type="button" class="btn">Comment</button>
+    <textarea id="edt-comment" class="edt-comment" rows="4" placeholder="Leave a comment..." ></textarea>
+    <button type="button" class="btn" onclick="addComment()">Comment</button>
     <div class="comment-header">All Comments</div>
-    <div class="comment-list">
+    <div class="comment-list" id="comment-list">
         <div class="comment-text">Great post! Thanks!</div>
     </div>
-
 
 </div>
 <script type="text/javascript">

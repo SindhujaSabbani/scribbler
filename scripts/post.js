@@ -25,11 +25,18 @@ function editButtonClick() {
     }
 }
 
-function addComments(id) {
-    var addEventName = id.value + '<br>';
-    var a = document.getElementById('userComments');
-    document.getElementById('addEventNames').innerHTML += '<p>' + addEventName + '</p>';
-    a.value = a.defaultValue;
+function addComment() {
+    var edtComment = document.getElementById('edt-comment');
+    var commentText = edtComment.value;
+    if (commentText != "") {
+        var commentList = document.getElementById('comment-list');
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("comment-text");
+        var newContent = document.createTextNode(commentText);
+        newDiv.appendChild(newContent);
+        commentList.insertAdjacentElement('afterbegin', newDiv);
+        edtComment.value = edtComment.defaultValue;
+    }
 }
 
 var numberOfClicks = 0;
