@@ -30,23 +30,27 @@ body {
 .home-button {
     background-color: #cfb53c;
     color: black;
+    text-align: center;
 }
 
 .modal-form-control-textarea {
-    resize: none;
     display: flex;
-    font-size: 1rem;
     line-height: 1.5;
     color: darkgray;
     background-color: #f1f1f1;
     border: 0px;
     margin-top: 5px;
+    font-family: sans-serif;
+    padding: 5px 0px 0px 5px;
+    color: black;
 }
 
 .btn-post {
     display: flex;
     align-self: center;
     width: fit-content;
+    font-family: sans-serif;
+    padding: 7px 40px 7px 40px;
 }
 
 .modal-post-content {
@@ -55,6 +59,7 @@ body {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 90%;
+    width: 80%;
     padding: 20px;
+    font-family: sans-serif;
 }
