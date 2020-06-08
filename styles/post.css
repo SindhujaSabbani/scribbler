@@ -1,0 +1,74 @@
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author {
+    align-self: baseline;
+}
+
+.btn {
+    align-self: baseline;
+    color: white;
+    border-width: 0px;
+    width: fit-content;
+    background-color: crimson;
+    padding: 10px;
+    box-shadow: 0px 2px 10px crimson;
+}
+
+.post-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.btn-like {
+}
+
+.btn-like-tip {
+    margin-top: 5px;
+    font-family: monospace;
+}
+
+.edt-comment {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.btn-comment {
+    width: 100px;
+}
+
+.comment-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.comment-list {
+    background-color: lightgray;
+    padding: 15px 10px 15px 10px;
+
+}
+
+.comment-text {
+    background-color: white;
+    padding: 15px 10px 15px 10px;
+
+}
