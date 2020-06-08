@@ -1,15 +1,13 @@
 .header {
-    width: 100%;
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header-logo {
-    float: left;
-    width: 20%;
 }
 
 .header-buttons {
-    float: right;
 }
 
 .logo-title {
@@ -25,7 +23,7 @@
 }
 
 .button {
-    margin: 0px 10px 10px 10px;
+    margin-right: 5px;
     padding: 10px 20px 10px 20px;
     border-style: outset;
     border-color: white;

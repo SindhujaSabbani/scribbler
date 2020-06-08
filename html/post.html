@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Title</title>
+    <title>Everything you should know about 'module' & 'require' in Node.js</title>
     <link rel="stylesheet" href="../styles/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -18,27 +18,32 @@
 <body class="flex-container">
 <div w3-include-html="header.html"></div>
 <div class="content">
-    <div class="title" id="post-title">Everything you should know about 'module' & 'require' in Node.js</div>
-    <div class="btn-row">
-        <div class="author">Srishti Gupta</div>
-        <button id='btn-text' type="button" class="btn" onclick="editButtonClick()">Edit
-            <i class="fa fa-pencil-square-o" id="btn-icon"></i>
+    <div class="content-body">
+        <div class="title" id="post-title">Everything you should know about 'module' & 'require' in Node.js</div>
+        <div class="btn-row">
+            <div class="author">Srishti Gupta</div>
+            <button id='btn-text' type="button" class="btn" onclick="editButtonClick()">Edit
+                <i class="fa fa-pencil-square-o" id="btn-icon"></i>
+            </button>
+        </div>
+        <div class="post-text" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if
+            you have a file
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
+            can
+            say that you’ve created a module
+            named xyz.
+        </div>
+        <button type="button" class="btn" onclick="postLiked()"><i class="fa fa-thumbs-up" id="btn-like-text">&nbsp;Like&nbsp;&nbsp;</i>
         </button>
-    </div>
-    <div class="post-text" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file
-        containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
-        say that you’ve created a module
-        named xyz.
-    </div>
-    <button type="button" class="btn" onclick="postLiked()"><i class="fa fa-thumbs-up" id="btn-like-text"> Like</i></button>
-    <div class="btn-like-tip" id="like-tip">Be the first one to like this!</div>
-    <textarea id="edt-comment" class="edt-comment" rows="4" placeholder="Leave a comment..." ></textarea>
-    <button type="button" class="btn" onclick="addComment()">Comment</button>
-    <div class="comment-header">All Comments</div>
-    <div class="comment-list" id="comment-list">
-        <div class="comment-text">Great post! Thanks!</div>
-    </div>
+        <div class="btn-like-tip" id="like-tip">Be the first one to like this!</div>
+        <textarea id="edt-comment" class="edt-comment" rows="4" placeholder="Leave a comment..."></textarea>
+        <button type="button" class="btn" onclick="addComment()">Comment</button>
+        <div class="comment-header">All Comments</div>
+        <div class="comment-list" id="comment-list">
+            <div class="comment-text">Great post! Thanks!</div>
+        </div>
 
+    </div>
 </div>
 <script type="text/javascript">
     includeHTML();

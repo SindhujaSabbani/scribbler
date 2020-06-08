@@ -43,7 +43,7 @@ function postLiked() {
     numberOfClicks += 1;
     if (numberOfClicks != 0) {
         var likeText = document.getElementById("btn-like-text");
-        likeText.innerHTML = "Liked!";
+        likeText.innerHTML = "&nbsp;Liked";
         var likeTip = document.getElementById("like-tip");
         if (numberOfClicks == 1) {
             likeTip.innerHTML = numberOfClicks + " person likes this!";
