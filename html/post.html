@@ -18,12 +18,15 @@
 <body class="flex-container">
 <div w3-include-html="header.html"></div>
 <div class="content">
-    <div class="title">Everything you should know about 'module' & 'require' in Node.js</div>
+    <div class="title" id="post-title">Everything you should know about 'module' & 'require' in Node.js</div>
     <div class="btn-row">
         <div class="author">Srishti Gupta</div>
-        <button type="button" class="btn"><i class="fa fa-pencil-square-o"> Edit</i></button>
+        <button type="button" class="btn" onclick="editButtonClick()">
+            <i class="fa fa-pencil-square-o" id="text-edit"> Edit</i>
+            <i class="fa fa-floppy-o hidden" id="text-save"> Save</i>
+        </button>
     </div>
-    <div class="post-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+    <div class="post-text" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file
         containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
         say that you’ve created a module
         named xyz.
