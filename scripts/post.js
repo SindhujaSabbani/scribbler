@@ -25,22 +25,25 @@ function editButtonClick() {
     }
 }
 
-function addComments(id){
-    var addEventName = id.value +'<br>';
+function addComments(id) {
+    var addEventName = id.value + '<br>';
     var a = document.getElementById('userComments');
-    document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';
-    a.value=a.defaultValue;
+    document.getElementById('addEventNames').innerHTML += '<p>' + addEventName + '</p>';
+    a.value = a.defaultValue;
 }
-var numberOfClicks=0;
-function postLiked(){
-    document.getElementById("likeBlog").innerHTML = "Liked!";
+
+var numberOfClicks = 0;
+
+function postLiked() {
     numberOfClicks += 1;
-    if(numberOfClicks!=0){
-        if (numberOfClicks==1){
-            document.getElementById('likeCount').innerHTML = numberOfClicks + " person likes this!";
-        }
-        else {
-            document.getElementById('likeCount').innerHTML = numberOfClicks + " people have liked this!";
+    if (numberOfClicks != 0) {
+        var likeText = document.getElementById("btn-like-text");
+        likeText.innerHTML = "Liked!";
+        var likeTip = document.getElementById("like-tip");
+        if (numberOfClicks == 1) {
+            likeTip.innerHTML = numberOfClicks + " person likes this!";
+        } else {
+            likeTip.innerHTML = numberOfClicks + " people have liked this!";
         }
     }
 }
